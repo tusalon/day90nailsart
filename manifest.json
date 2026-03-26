@@ -1,20 +1,20 @@
 {
-  "name": "Nails Glam me ",
-  "short_name": "Nails",
+  "name": "Day90_ArtNails",
+  "short_name": "Day90_ArtNails",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/nailsglamme/",
-  "scope": "/nailsglamme/",
+  "start_url": "/day90nailsart/",
+  "scope": "/day90nailsart/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/nailsglamme/icons/icon-192x192.png",
+      "src": "/day90nailsart/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/nailsglamme/icons/icon-512x512.png",
+      "src": "/day90nailsart/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

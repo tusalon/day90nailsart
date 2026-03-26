@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Nails Glam me 
+// sw.js - Service Worker para Day90_ArtNails
 
-const CACHE_NAME = 'nailsglamme-v1';
+const CACHE_NAME = 'day90nailsart-v1';
 const urlsToCache = [
-  '/nailsglamme/',
-  '/nailsglamme/index.html',
-  '/nailsglamme/admin.html',
-  '/nailsglamme/admin-login.html',
-  '/nailsglamme/setup-wizard.html',
-  '/nailsglamme/editar-negocio.html',
-  '/nailsglamme/manifest.json',
-  '/nailsglamme/icons/icon-72x72.png',
-  '/nailsglamme/icons/icon-96x96.png',
-  '/nailsglamme/icons/icon-128x128.png',
-  '/nailsglamme/icons/icon-144x144.png',
-  '/nailsglamme/icons/icon-152x152.png',
-  '/nailsglamme/icons/icon-192x192.png',
-  '/nailsglamme/icons/icon-384x384.png',
-  '/nailsglamme/icons/icon-512x512.png'
+  '/day90nailsart/',
+  '/day90nailsart/index.html',
+  '/day90nailsart/admin.html',
+  '/day90nailsart/admin-login.html',
+  '/day90nailsart/setup-wizard.html',
+  '/day90nailsart/editar-negocio.html',
+  '/day90nailsart/manifest.json',
+  '/day90nailsart/icons/icon-72x72.png',
+  '/day90nailsart/icons/icon-96x96.png',
+  '/day90nailsart/icons/icon-128x128.png',
+  '/day90nailsart/icons/icon-144x144.png',
+  '/day90nailsart/icons/icon-152x152.png',
+  '/day90nailsart/icons/icon-192x192.png',
+  '/day90nailsart/icons/icon-384x384.png',
+  '/day90nailsart/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/nailsglamme/icons/icon-192x192.png');
+            return caches.match('/day90nailsart/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Nails Glam me ');
+console.log('✅ Service Worker configurado para Day90_ArtNails');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
